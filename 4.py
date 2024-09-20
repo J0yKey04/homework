@@ -1,9 +1,17 @@
-a = list(map(int, input().split()))
-b = 1
+f = open('input.txt')
+a = f.readline()
+c = f.readline()
+a = str(a) 
+a = [a.split()]
+
 for i in range(len(a)):
-    b = b * a[i]
+    a[i] = int(a[i])
 
-b = b ** (1/len(a))
+c = str(c)
+c = c.split()
 
-print(b)
+
+print(a, c)
+
+
 
